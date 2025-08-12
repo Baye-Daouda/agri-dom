@@ -15,7 +15,9 @@ import {
   ChevronRight,
   Settings,
   Users,
-  FileText
+  FileText,
+  Building2,
+  Stethoscope
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -54,6 +56,8 @@ const Navbar = () => {
 
   const navItems = [
     { title: 'Tableau de bord', path: '/', icon: Home },
+    { title: 'Hôpital', path: '/hopital', icon: Building2 },
+    { title: 'Médecin', path: '/medecin', icon: Stethoscope },
     { title: 'Parcelles', path: '/parcelles', icon: MapPin },
     { title: 'Cultures', path: '/cultures', icon: Sprout },
     { title: 'Inventaire', path: '/inventaire', icon: Package },

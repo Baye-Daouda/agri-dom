@@ -15,10 +15,14 @@ import { CRMProvider } from "./contexts/CRMContext";
 import { StatisticsProvider } from "./contexts/StatisticsContext";
 import { AppSettingsProvider } from "./contexts/AppSettingsContext";
 import { trackPageView } from "./utils/analytics";
+import HospitalPage from "./pages/HospitalPage";
+import DoctorDashboardPage from "./pages/DoctorDashboardPage";
 
 // Define routes configuration with redirects
 const routes = [
   { path: "/", element: <Index /> },
+  { path: "/hopital", element: <HospitalPage /> },
+  { path: "/medecin", element: <DoctorDashboardPage /> },
   { path: "/parcelles", element: <ParcelsPage /> },
   { path: "/parcelles/:id", element: <ParcelsDetailsPage /> },
   { path: "/cultures", element: <CropsPage /> },
